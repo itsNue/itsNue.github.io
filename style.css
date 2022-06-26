@@ -13,11 +13,16 @@
   font-style: normal;
 }
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body, p, section, figure, img, a {
-    margin: 0;
+body,
+p,
+section,
+figure,
+img,
+a {
+  margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
@@ -29,13 +34,14 @@ body, p, section, figure, img, a {
   letter-spacing: -0.009em;
 }
 
-section, figure {
-    display: block;
+section,
+figure {
+  display: block;
 }
 a {
-    cursor: pointer;
-    font-style: italic;
-    font-size: var(--font-sm);
+  cursor: pointer;
+  font-style: italic;
+  font-size: var(--font-sm);
 }
 a[target="_blank"]:after {
   content: "↗";
@@ -91,10 +97,10 @@ body * {
   color: var(--text);
 }
 small {
-    font-size: var(--font-extsm);
-    font-style: italic;
-    font-weight: 100;
-    color: var(--off-white);
+  font-size: var(--font-extsm);
+  font-style: italic;
+  font-weight: 100;
+  color: var(--off-white);
 }
 .grid {
   margin: 0 auto;
@@ -109,23 +115,22 @@ small {
   transform: translateX(-50%);
   top: var(--spacer);
 }
-.title a {
-    font-style: normal;
-    padding: calc(var(--spacer-sm) / 3) var(--spacer-sm);
-    border: 1px solid var(--text);
-    border-radius: 9999px;
-    cursor: pointer;
-    background-color: var(--bg-dark);
-    color: var(--text);
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 1;
-    font-size: var(--font-sm);
+a.pill {
+  font-style: normal;
+  padding: calc(var(--spacer-sm) / 3) var(--spacer-sm);
+  border: 1px solid var(--text);
+  border-radius: 9999px;
+  cursor: pointer;
+  background-color: var(--bg-dark);
+  color: var(--text);
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: var(--font-sm);
 }
 section,
 p,
-figure
-{
+figure {
   margin-bottom: var(--spacer);
 }
 
@@ -159,6 +164,6 @@ h1 {
   }
 
   .title {
-    top: var(--spacer-sm)
+    top: var(--spacer-sm);
   }
 }
