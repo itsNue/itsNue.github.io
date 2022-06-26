@@ -110,8 +110,17 @@ small {
   top: var(--spacer);
 }
 .title a {
-    text-decoration: none;
     font-style: normal;
+    padding: calc(var(--spacer-sm) / 3) var(--spacer-sm);
+    border: 1px solid var(--text);
+    border-radius: 9999px;
+    cursor: pointer;
+    background-color: var(--bg-dark);
+    color: var(--text);
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: var(--font-sm);
 }
 section,
 p,
@@ -119,13 +128,20 @@ figure
 {
   margin-bottom: var(--spacer);
 }
-p+p {
-  text-indent: var(--spacer);
-}
+
 .text {
   width: 100%;
   max-width: 640px;
   margin: auto;
+}
+.text ul {
+  list-style: none;
+  list-style-position: outside;
+  margin: 0 0 var(--spacer) var(--spacer);
+  padding: 0;
+}
+.text li {
+  margin-bottom: var(--spacer) / 2;
 }
 h1,
 h2,
